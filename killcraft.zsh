@@ -3,7 +3,7 @@
 # killcraft.zsh (no parameters)
 # =============
 # Once in a while, the Minecraft launcher process hangs and you can't play the game
-# again until you kill it. This script does this for you.
+# again until you kill it. This script does this for you. Then it launches Minecraft.
 # =======================================================
 
 # Ask the system for all the running processes, _grep_ for the MC launcher, exclude this grep from the
@@ -20,3 +20,5 @@ if [[ $LEN -gt 0 ]] {
 } else {
 	echo "no process"
 }
+
+open /Applications/Minecraft.app
